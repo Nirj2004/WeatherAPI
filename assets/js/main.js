@@ -10,7 +10,7 @@ $(document).ready(function () {
             lat = position.coords.latitude;
             long = position.coords.longitude;
 
-            var api = 'https://fcc-weather-api.glitch.me/api/current?lat=' + lat + '&lon=' + long + '';
+            var api = 'https://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + long + '';
 
             $.getJSON(api, function (res) {
 
